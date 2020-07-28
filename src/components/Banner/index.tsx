@@ -22,17 +22,14 @@ const Banner: React.FC<BannerProps> = ({
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 
   return (
-    <BannerMainContainer>
-      {/* <BannerMainContainer backgroundImage={bgUrl}> */}
+    <BannerMainContainer backgroundImage={bgUrl}>
       <Container>
         <Item>
           <Title>{videoTitle}</Title>
           <Description>{videoDescription}</Description>
         </Item>
         <Item>
-          <VideoIframeResponsive
-            youtubeID={youTubeID}
-          />
+          <VideoIframeResponsive youtubeID={youTubeID} />
           <WatchButton>Assistir</WatchButton>
         </Item>
       </Container>

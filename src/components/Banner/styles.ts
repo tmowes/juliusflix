@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BannerMainProps } from './types';
 
 export const Container = styled.section`
   margin-left: 5%;
@@ -9,7 +10,7 @@ export const Container = styled.section`
   justify-content: center;
   position: relative;
   z-index: 10;
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     padding-top: 100px;
     flex-direction: column;
   }
@@ -19,7 +20,7 @@ export const Item = styled.div`
   width: 50%;
   display: inline-block;
   margin-bottom: 50px;
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
 `;
@@ -38,7 +39,7 @@ export const Category = styled.h1`
   line-height: 1;
   border-radius: 4px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     display: none;
     font-size: 18px;
     padding: 10px;
@@ -46,7 +47,7 @@ export const Category = styled.h1`
 `;
 
 export const Description = styled.p`
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -59,19 +60,20 @@ export const Title = styled.h2`
   margin-top: 0;
   margin-bottom: 32px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     font-size: 32px;
     text-align: center;
   }
 `;
 
-export const BannerMainContainer = styled.section`
+export const BannerMainContainer = styled.section<BannerMainProps>`
   height: 80vh;
   position: relative;
   color: #fff;
+  background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
   background-size: cover;
   background-position: center;
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     height: auto;
     min-height: 50vh;
   }
@@ -95,7 +97,7 @@ export const BannerMainContainer = styled.section`
 
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, #141414 0%, transparent 100%);
+    background: linear-gradient(0deg, #21222c 0%, transparent 100%);
   }
 `;
 
@@ -118,7 +120,7 @@ export const WatchButton = styled.button`
   transition: opacity 0.3s;
   display: none;
   margin: 0 auto;
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     display: block;
   }
 `;

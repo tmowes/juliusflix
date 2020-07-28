@@ -3,3 +3,7 @@ export interface VideoCardProps {
   videoURL: string;
   categoryColor: string;
 }
+
+export interface VideoContainerProps {
+  url: string;
+}
