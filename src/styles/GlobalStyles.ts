@@ -17,7 +17,6 @@ html, body, #root {
   flex-direction: column;
   @media (max-width: 768px){
   min-height: calc(100vh - 48px);
-
   }
 }
 *, button, input {
@@ -54,4 +53,12 @@ html {
   --PikTewCurly: #202428;
   --orange: #E55838;
 }
+/* #root {
+  min-height: calc(100vh - 96px);
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px){
+  min-height: calc(100vh - 48px);
+  }
+} */
 `;

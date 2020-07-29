@@ -15,8 +15,7 @@ export const Container = styled.ul`
     &:before {
       font-size: 30px;
     }
-  }
-  
+  }  
   .slick-prev {
     left: 0;
   }
