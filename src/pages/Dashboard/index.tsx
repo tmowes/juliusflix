@@ -15,7 +15,9 @@ const Dashboard: React.FC = () => {
         <Banner
           videoTitle={initialData.categories[0].videos[0].title}
           url={initialData.categories[0].videos[0].url}
-          videoDescription={'something'}
+          videoDescription={
+            'O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa!'
+          }
         />
         <Carousel ignoreFirstVideo category={initialData.categories[0]} />
         <Carousel category={initialData.categories[1]} />

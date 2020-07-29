@@ -1,13 +1,14 @@
 import React from 'react';
+import Slider from './Slider';
 
+import VideoCard from './VideoCard';
 import {
   VideoCardGroupContainer,
-  VideoCardList,
   Title,
   ExtraLink,
+  SliderItem,
 } from './styles';
 import { CarouselProps } from './types';
-import VideoCard from './VideoCard';
 
 const Carousel: React.FC<CarouselProps> = ({ ignoreFirstVideo, category }) => {
   const categoryTitle = category.categoryTitle;
@@ -28,22 +29,22 @@ const Carousel: React.FC<CarouselProps> = ({ ignoreFirstVideo, category }) => {
           )}
         </>
       )}
-      <VideoCardList>
+      <Slider>
         {videos.map((video, index) => {
           if (ignoreFirstVideo && index === 0) {
             return null;
           }
           return (
-            <li key={video.title}>
+            <SliderItem key={video.title}>
               <VideoCard
                 videoTitle={video.title}
                 videoURL={video.url}
                 categoryColor={categoryColor}
               />
-            </li>
+            </SliderItem>
           );
         })}
-      </VideoCardList>
+      </Slider>
     </VideoCardGroupContainer>
   );
 };
