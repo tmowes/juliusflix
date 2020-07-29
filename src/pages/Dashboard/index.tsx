@@ -18,11 +18,11 @@ const Dashboard: React.FC = () => {
           videoDescription={'something'}
         />
         <Carousel ignoreFirstVideo category={initialData.categories[0]} />
-        <Carousel ignoreFirstVideo category={initialData.categories[1]} />
-        <Carousel ignoreFirstVideo category={initialData.categories[2]} />
-        <Carousel ignoreFirstVideo category={initialData.categories[3]} />
-        <Carousel ignoreFirstVideo category={initialData.categories[4]} />
-        <Carousel ignoreFirstVideo category={initialData.categories[5]} />
+        <Carousel category={initialData.categories[1]} />
+        <Carousel category={initialData.categories[2]} />
+        <Carousel category={initialData.categories[3]} />
+        <Carousel category={initialData.categories[4]} />
+        <Carousel category={initialData.categories[5]} />
         <Footer />
       </Container>
     </div>

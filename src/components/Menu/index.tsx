@@ -14,7 +14,7 @@ const Menu: React.FC = () => {
         <HomeLink to='/'>
           <Logo />
         </HomeLink>
-        <AddVideoLink to='/'>Novo Video</AddVideoLink>
+        <AddVideoLink to='/cadastro/video'>Novo Video</AddVideoLink>
       </NavigationMenu>
     </Container>
   );

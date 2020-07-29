@@ -8,10 +8,17 @@ export default createGlobalStyle`
   color: var(--white);
 }
 html, body, #root {
-  max-height: 100vh;
-  max-width: 100vw;
-  height: 100%;
-  width: 100%;
+  /* max-width: 100vw; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* background: var(--like); */
+  min-height: calc(100vh - 96px);
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px){
+  min-height: calc(100vh - 48px);
+
+  }
 }
 *, button, input {
   border: 0;

@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import { BannerMainProps } from './types';
 
 export const Container = styled.section`
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 0 5%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -19,7 +18,7 @@ export const Container = styled.section`
 export const Item = styled.div`
   width: 50%;
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -59,7 +58,6 @@ export const Title = styled.h2`
   line-height: 1;
   margin-top: 0;
   margin-bottom: 32px;
-
   @media (max-width: 768px) {
     font-size: 32px;
     text-align: center;

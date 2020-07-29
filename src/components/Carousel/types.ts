@@ -1,5 +1,5 @@
 export interface CarouselProps {
-  ignoreFirstVideo: boolean;
+  ignoreFirstVideo?: boolean;
   category: CategoryProps;
 }
 export interface CategoryProps {

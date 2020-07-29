@@ -6,14 +6,11 @@ import Button from '../Button';
 export const Container = styled.div`
   display: flex;
   z-index: 999;
-
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 8%;
   background: var(--secondary);
-  border-bottom: 1px solid var(--orange);
 `;
 
 export const NavigationMenu = styled.nav`
@@ -22,8 +19,12 @@ export const NavigationMenu = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 8%;
+  border-bottom: 1px solid var(--orange);
+  /* padding-top: 96px; */
   @media (max-width: 768px) {
     height: 48px;
+    /* padding-top: 48px; */
     justify-content: center;
   }
 `;
