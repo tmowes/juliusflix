@@ -7,34 +7,6 @@ export default createGlobalStyle`
   box-sizing: border-box;
   color: var(--white);
 }
-html, body, #root {
-  /* max-width: 100vw; */
-  /* height: 100%; */
-  /* width: 100%; */
-  /* background: var(--like); */
-  min-height: calc(100vh - 96px);
-  display: flex;
-  flex-direction: column;
-  @media (max-width: 768px){
-  min-height: calc(100vh - 48px);
-  }
-}
-*, button, input {
-  border: 0;
-  outline: 0;
-  background: none;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-button {
-  cursor: pointer;
-  text-decoration: none;
-}
-html {
-  background: var(--primary);
-}
 :root {
   --primary: #21222c;
   --secondary: #282a36;
@@ -53,12 +25,20 @@ html {
   --PikTewCurly: #202428;
   --orange: #E55838;
 }
-/* #root {
-  min-height: calc(100vh - 96px);
-  display: flex;
-  flex-direction: column;
-  @media (max-width: 768px){
-  min-height: calc(100vh - 48px);
-  }
-} */
+html, body, #root {
+  min-height:  100vh;
+}
+*, button, input {
+  border: 0;
+  outline: 0;
+  background: none;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
 `;

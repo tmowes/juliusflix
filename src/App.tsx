@@ -7,8 +7,8 @@ import Routes from './routes';
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <Routes />
       <GlobalStyles />
+      <Routes />
     </BrowserRouter>
   );
 };

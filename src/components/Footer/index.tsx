@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         />
       </a>
       <p>
-        Orgulhosamente criado durante a{' '}
+        Criado durante a{' '}
         <a href='https://www.alura.com.br/'>Imersão React da Alura</a>
       </p>
     </Container>

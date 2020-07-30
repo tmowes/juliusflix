@@ -5,4 +5,8 @@ export const Main = styled.div`
   color: var(--white);
   flex: 1;
   padding: 48px 5% 0;
+  min-height: calc(100vh - 96px - 94px);
+  @media (max-width: 768px) {
+    min-height: calc(100vh - 126px - 69px);
+  }
 `;
