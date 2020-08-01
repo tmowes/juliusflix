@@ -10,7 +10,6 @@ export const WrapperFormField = styled.div`
     padding-left: 48px;
   }
 `
-
 export const Label = styled.label`
   span {
     position: absolute;
@@ -26,7 +25,6 @@ export const Label = styled.label`
     text-transform: uppercase;
   }
 `
-
 export const Input = styled.input<InputProps>`
   background: var(--white);
   color: var(--secondary);

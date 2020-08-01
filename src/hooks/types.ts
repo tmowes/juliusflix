@@ -6,7 +6,7 @@ export interface FormProps {
 }
 
 export interface CategoryProps {
-  id: number
+  id?: number
   categoryTitle?: string
   description?: string
   color?: string

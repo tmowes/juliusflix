@@ -32,7 +32,6 @@ export const BannerMainContainer = styled.section<BannerMainProps>`
     background: linear-gradient(0deg, #21222c 50%, transparent 100%);
   }
 `
-
 export const Container = styled.section`
   margin: 0 5%;
   height: 100%;
@@ -46,7 +45,6 @@ export const Container = styled.section`
     flex-direction: column;
   }
 `
-
 export const Item = styled.div`
   width: 50%;
   margin-bottom: 48px;
@@ -54,7 +52,6 @@ export const Item = styled.div`
     width: 100%;
   }
 `
-
 export const Title = styled.h2`
   font-style: normal;
   font-weight: 300;
@@ -67,13 +64,11 @@ export const Title = styled.h2`
     text-align: center;
   }
 `
-
 export const Description = styled.p`
   @media (max-width: 768px) {
     display: none;
   }
 `
-
 export const Category = styled.h1`
   font-family: Roboto;
   font-style: normal;
@@ -87,14 +82,12 @@ export const Category = styled.h1`
   padding: 25px;
   line-height: 1;
   border-radius: 4px;
-
   @media (max-width: 768px) {
     display: none;
     font-size: 18px;
     padding: 10px;
   }
 `
-
 export const WatchButton = styled.button`
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;

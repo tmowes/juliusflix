@@ -10,12 +10,10 @@ export interface CategoryProps {
   link_extra?: ExtraLinkProps
   videos: VideosProps[]
 }
-
 export interface ExtraLinkProps {
   text: string
   url: string
 }
-
 export interface VideosProps {
   videoTitle: string
   url: string

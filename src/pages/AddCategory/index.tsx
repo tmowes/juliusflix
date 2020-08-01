@@ -11,7 +11,6 @@ import { FormDataProps } from '../../hooks/types'
 
 const AddCategory: React.FC = () => {
   const initialvalues = {
-    id: 1,
     categoryTitle: '',
     description: '',
     color: '#21222c',
@@ -31,7 +30,6 @@ const AddCategory: React.FC = () => {
   useEffect(() => {
     async function loadDatabases(): Promise<void> {
       const categoriesList = await getCategories()
-      console.log('categoriesList', categoriesList)
       setCategories(categoriesList)
     }
     loadDatabases()

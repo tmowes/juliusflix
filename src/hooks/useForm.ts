@@ -3,7 +3,6 @@ import { FormDataProps, FormProps } from './types'
 
 export function useForm(initialvalues: FormDataProps): FormProps {
   const [values, setValues] = useState<FormDataProps>(initialvalues)
-
   const setValue = useCallback(
     (key, value) => {
       setValues({
@@ -13,17 +12,14 @@ export function useForm(initialvalues: FormDataProps): FormProps {
     },
     [values],
   )
-
   const handleChange = useCallback(
     event => {
       setValue(event.target.getAttribute('name'), event.target.value)
     },
     [setValue],
   )
-
   const clearForm = useCallback(() => {
     setValues(initialvalues)
   }, [initialvalues])
-
   return { values, handleChange, clearForm }
 }

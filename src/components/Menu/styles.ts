@@ -11,7 +11,6 @@ export const Container = styled.div`
   right: 0;
   background: var(--secondary);
 `
-
 export const NavigationMenu = styled.nav`
   width: 100%;
   height: 96px;
@@ -25,7 +24,6 @@ export const NavigationMenu = styled.nav`
     justify-content: center;
   }
 `
-
 export const HomeLink = styled(Link)``
 
 export const AddVideoLink = styled(Button)`
@@ -47,7 +45,6 @@ export const AddVideoLink = styled(Button)`
     border-radius: 0;
   }
 `
-
 export const Logo = styled.img.attrs({
   src: LogoImg,
   alt: 'JULIUSFLIX',

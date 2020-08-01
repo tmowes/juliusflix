@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useCallback, useState, useEffect } from 'react'
 
 import { useHistory } from 'react-router-dom'
@@ -10,7 +9,7 @@ import Button from '../../components/Button'
 import FormButton from '../../components/FormButton'
 import FormButtonsContainer from '../../components/FormButtonsContainer'
 import { addVideo } from '../../repositories/videos'
-import { FormDataProps, CategoryProps } from '../../hooks/types'
+import { FormDataProps } from '../../hooks/types'
 import { getCategories } from '../../repositories/categories'
 
 const AddVideo: React.FC = () => {
@@ -18,13 +17,12 @@ const AddVideo: React.FC = () => {
 
   const history = useHistory()
   const initialvalues = {
-    id: 1,
     category: 'Front End',
     videoTitle:
       'Gestão & Pessoas em Tech - Treinamento e desenvolvimento em tecnologia',
     url: 'https://www.youtube.com/watch?v=uMQ9Jk7hw2I',
   }
-  const { values, handleChange, clearForm } = useForm(initialvalues)
+  const { values, handleChange } = useForm(initialvalues)
   const handleSubmit = useCallback(
     event => {
       event.preventDefault()
@@ -52,8 +50,6 @@ const AddVideo: React.FC = () => {
   const categorySuggestions = categories.map(
     ({ categoryTitle }) => categoryTitle,
   )
-
-  console.log('categorySuggestions', categorySuggestions)
 
   return (
     <Container>

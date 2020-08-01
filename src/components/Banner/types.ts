@@ -3,7 +3,6 @@ export interface BannerProps {
   url: string
   videoDescription: string
 }
-
 export interface BannerMainProps {
   backgroundImage: string
 }
