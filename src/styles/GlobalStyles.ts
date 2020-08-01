@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 * {
@@ -41,4 +41,4 @@ button {
   cursor: pointer;
   text-decoration: none;
 }
-`;
+`

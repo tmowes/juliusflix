@@ -1,5 +1,6 @@
 export interface CategoryProps {
-  categoryTitle: string;
-  description: string;
-  color: string;
+  id: number
+  categoryTitle: string
+  description: string
+  color: string
 }

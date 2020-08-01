@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { BannerMainProps } from './types';
+import styled from 'styled-components'
+import { BannerMainProps } from './types'
 
 export const BannerMainContainer = styled.section<BannerMainProps>`
   height: 80vh;
@@ -29,9 +29,9 @@ export const BannerMainContainer = styled.section<BannerMainProps>`
   }
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, #282a36 8%, transparent 100%);
+    background: linear-gradient(0deg, #21222c 50%, transparent 100%);
   }
-`;
+`
 
 export const Container = styled.section`
   margin: 0 5%;
@@ -45,7 +45,7 @@ export const Container = styled.section`
     padding-top: 96px;
     flex-direction: column;
   }
-`;
+`
 
 export const Item = styled.div`
   width: 50%;
@@ -53,7 +53,7 @@ export const Item = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
-`;
+`
 
 export const Title = styled.h2`
   font-style: normal;
@@ -66,13 +66,13 @@ export const Title = styled.h2`
     font-size: 32px;
     text-align: center;
   }
-`;
+`
 
 export const Description = styled.p`
   @media (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 export const Category = styled.h1`
   font-family: Roboto;
@@ -93,7 +93,7 @@ export const Category = styled.h1`
     font-size: 18px;
     padding: 10px;
   }
-`;
+`
 
 export const WatchButton = styled.button`
   font-family: 'Roboto', sans-serif;
@@ -116,4 +116,4 @@ export const WatchButton = styled.button`
   @media (max-width: 768px) {
     display: block;
   }
-`;
+`

@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import LogoImg from '../../assets/juliusFlix.png';
-import Button from '../Button';
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import LogoImg from '../../assets/juliusFlix.png'
+import Button from '../Button'
 
 export const Container = styled.div`
   z-index: 100;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   left: 0;
   right: 0;
   background: var(--secondary);
-`;
+`
 
 export const NavigationMenu = styled.nav`
   width: 100%;
@@ -24,9 +24,9 @@ export const NavigationMenu = styled.nav`
     height: 48px;
     justify-content: center;
   }
-`;
+`
 
-export const HomeLink = styled(Link)``;
+export const HomeLink = styled(Link)``
 
 export const AddVideoLink = styled(Button)`
   font-size: 16px;
@@ -46,7 +46,7 @@ export const AddVideoLink = styled(Button)`
     border: 0;
     border-radius: 0;
   }
-`;
+`
 
 export const Logo = styled.img.attrs({
   src: LogoImg,
@@ -56,4 +56,4 @@ export const Logo = styled.img.attrs({
   @media (max-width: 768px) {
     max-height: 32px;
   }
-`;
+`

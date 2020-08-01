@@ -1,3 +1,3 @@
 export interface VideoIframeResponsiveProps {
-  youtubeID: string;
+  youtubeID: string
 }

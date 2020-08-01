@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { VideoContainerProps } from './types';
+import styled from 'styled-components'
+import { VideoContainerProps } from './types'
 
 export const VideoCardContainer = styled.a<VideoContainerProps>`
   display: flex;
@@ -25,4 +25,4 @@ export const VideoCardContainer = styled.a<VideoContainerProps>`
   &:not(:first-child) {
     margin-left: 20px;
   }
-`;
+`

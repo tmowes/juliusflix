@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.ul`
   padding: 0;
@@ -15,12 +15,11 @@ export const Container = styled.ul`
     &:before {
       font-size: 30px;
     }
-  }  
+  }
   .slick-prev {
     left: 0;
   }
   .slick-next {
     right: 16px;
   }
-`;
-
+`

@@ -1,23 +1,23 @@
-import React from 'react';
+import React from 'react'
 import {
   Container,
   NavigationMenu,
   HomeLink,
   Logo,
   AddVideoLink,
-} from './styles';
+} from './styles'
 
 const Menu: React.FC = () => {
   return (
     <Container>
       <NavigationMenu>
-        <HomeLink to='/'>
+        <HomeLink to="/">
           <Logo />
         </HomeLink>
-        <AddVideoLink to='/cadastro/video'>Novo Video</AddVideoLink>
+        <AddVideoLink to="/cadastro/video">Novo Video</AddVideoLink>
       </NavigationMenu>
     </Container>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu

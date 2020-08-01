@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const VideoCardGroupContainer = styled.section`
   color: var(--white);
   min-height: 197px;
   margin-left: 5%;
   margin-bottom: 16px;
-`;
+`
 
 export const Title = styled.h3`
   font-style: normal;
@@ -23,7 +23,7 @@ export const Title = styled.h3`
     font-size: 18px;
     padding: 8px;
   }
-`;
+`
 
 export const ExtraLink = styled.a`
   margin-left: 16px;
@@ -38,7 +38,7 @@ export const ExtraLink = styled.a`
     margin-bottom: 16px;
     margin-left: 0;
   }
-`;
+`
 
 // export const VideoCardList = styled.ul`
 //   display: flex;
@@ -58,4 +58,4 @@ export const SliderItem = styled.li`
     height: 197px;
     object-fit: cover;
   }
-`;
+`

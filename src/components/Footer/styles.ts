@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.footer`
   background: var(--secondary);
@@ -9,4 +9,4 @@ export const Container = styled.footer`
   @media (max-width: 768px) {
     margin-bottom: 53px;
   }
-`;
+`

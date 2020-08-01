@@ -1,22 +1,22 @@
-import React from 'react';
+import React from 'react'
 
-import { Container } from './styles';
+import { Container } from './styles'
 
 const Footer: React.FC = () => {
   return (
     <Container>
-      <a href='https://www.alura.com.br/'>
+      <a href="https://www.alura.com.br/">
         <img
-          src='https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg'
-          alt='Logo Alura'
+          src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg"
+          alt="Logo Alura"
         />
       </a>
       <p>
-        Criado durante a{' '}
-        <a href='https://www.alura.com.br/'>Imersão React da Alura</a>
+        Criado durante a
+        <a href="https://www.alura.com.br/"> Imersão React da Alura</a>
       </p>
     </Container>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

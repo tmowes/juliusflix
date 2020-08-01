@@ -1,20 +1,15 @@
-import React from 'react';
-import Slider from './Slider';
+import React from 'react'
+import Slider from './Slider'
 
-import VideoCard from './VideoCard';
-import {
-  VideoCardGroupContainer,
-  Title,
-  ExtraLink,
-  SliderItem,
-} from './styles';
-import { CarouselProps } from './types';
+import VideoCard from './VideoCard'
+import { VideoCardGroupContainer, Title, ExtraLink, SliderItem } from './styles'
+import { CarouselProps } from './types'
 
 const Carousel: React.FC<CarouselProps> = ({ ignoreFirstVideo, category }) => {
-  const categoryTitle = category.categoryTitle;
-  const categoryColor = category.color;
-  const categoryExtraLink = category.link_extra;
-  const videos = category.videos;
+  const { categoryTitle } = category
+  const categoryColor = category.color
+  const categoryExtraLink = category.link_extra
+  const { videos } = category
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
@@ -23,7 +18,7 @@ const Carousel: React.FC<CarouselProps> = ({ ignoreFirstVideo, category }) => {
             {categoryTitle}
           </Title>
           {categoryExtraLink && (
-            <ExtraLink href={categoryExtraLink.url} target='_blank'>
+            <ExtraLink href={categoryExtraLink.url} target="_blank">
               {categoryExtraLink.text}
             </ExtraLink>
           )}
@@ -32,7 +27,7 @@ const Carousel: React.FC<CarouselProps> = ({ ignoreFirstVideo, category }) => {
       <Slider>
         {videos.map((video, index) => {
           if (ignoreFirstVideo && index === 0) {
-            return null;
+            return null
           }
           return (
             <SliderItem key={video.title}>
@@ -42,11 +37,11 @@ const Carousel: React.FC<CarouselProps> = ({ ignoreFirstVideo, category }) => {
                 categoryColor={categoryColor}
               />
             </SliderItem>
-          );
+          )
         })}
       </Slider>
     </VideoCardGroupContainer>
-  );
-};
+  )
+}
 
-export default Carousel;
+export default Carousel

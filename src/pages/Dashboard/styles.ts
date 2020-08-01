@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
   background: var(--secondary);
@@ -7,4 +7,4 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     padding-top: 48px;
   }
-`;
+`

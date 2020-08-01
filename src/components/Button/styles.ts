@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled(Link)`
   display: inline-block;
@@ -17,4 +17,4 @@ export const Container = styled(Link)`
   &:focus {
     opacity: 0.8;
   }
-`;
+`

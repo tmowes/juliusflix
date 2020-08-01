@@ -1,0 +1,191 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "categoryTitle": "Front End",
+      "color": "#6BD1FF",
+      "link_extra": {
+        "text": "Formação de Front End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    },
+    {
+      "id": 2,
+      "categoryTitle": "Back End",
+      "color": "#00C86F",
+      "link_extra": {
+        "text": "Cursos de Back End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
+      }
+    },
+    {
+      "id": 3,
+      "categoryTitle": "Data Science e Inteligência Artificial",
+      "color": "#9cd33b",
+      "link_extra": {
+        "text": "Cursos de Data Science na Alura",
+        "url": "https://www.alura.com.br/cursos-online-mobile"
+      }
+    },
+    {
+      "id": 4,
+      "categoryTitle": "Filmes",
+      "color": "orange"
+    },
+    {
+      "id": 5,
+      "categoryTitle": "Games",
+      "color": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "videoID": 1,
+      "categoryID": 1,
+      "videoTitle": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+    },
+    {
+      "videoID": 2,
+      "categoryID": 1,
+      "videoTitle": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+    },
+    {
+      "videoID": 3,
+      "categoryID": 1,
+      "videoTitle": "Componentização com VanillaJS #AluraMais",
+      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+    },
+    {
+      "videoID": 4,
+      "categoryID": 1,
+      "videoTitle": "Pare de chutar e aprenda a display: inline #01",
+      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+    },
+    {
+      "videoID": 5,
+      "categoryID": 1,
+      "videoTitle": "Template String: Interpolando strings com JavaScript #AluraMais",
+      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+    },
+    {
+      "videoID": 6,
+      "categoryID": 1,
+      "videoTitle": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+    },
+    {
+      "videoID": 7,
+      "categoryID": 1,
+      "videoTitle": "Novidades do Angular v9",
+      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+    },
+    {
+      "videoID": 8,
+      "categoryID": 2,
+      "videoTitle": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
+      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+    },
+    {
+      "videoID": 9,
+      "categoryID": 2,
+      "videoTitle": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
+      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+    },
+    {
+      "videoID": 10,
+      "categoryID": 2,
+      "videoTitle": "Programei 4 robôs que criam vídeos para mim no YouTube",
+      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+    },
+    {
+      "videoID": 11,
+      "categoryID": 2,
+      "videoTitle": "API: Dicionário do Programador",
+      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+    },
+    {
+      "videoID": 12,
+      "categoryID": 2,
+      "videoTitle": "Usando Git Direito",
+      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+    },
+    {
+      "videoID": 13,
+      "categoryID": 3,
+      "videoTitle": "Teste de Turing",
+      "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+    },
+    {
+      "videoID": 14,
+      "categoryID": 3,
+      "videoTitle": "O que é Data Science?",
+      "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+    },
+    {
+      "videoID": 15,
+      "categoryID": 3,
+      "videoTitle": "Melhor forma de aprender Python",
+      "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+    },
+    {
+      "videoID": 16,
+      "categoryID": 3,
+      "videoTitle": "Como ingressar no mercado de Data Science?",
+      "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+    },
+    {
+      "videoID": 17,
+      "categoryID": 4,
+      "videoTitle": "Interestellar",
+      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+    },
+    {
+      "videoID": 18,
+      "categoryID": 4,
+      "videoTitle": "Gattaca",
+      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+    },
+    {
+      "videoID": 19,
+      "categoryID": 4,
+      "videoTitle": "A Chegada",
+      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+    },
+    {
+      "videoID": 20,
+      "categoryID": 4,
+      "videoTitle": "Feitiço do Tempo",
+      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+    },
+    {
+      "videoID": 21,
+      "categoryID": 5,
+      "videoTitle": "Final Fantasy 7",
+      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+    },
+    {
+      "videoID": 22,
+      "categoryID": 5,
+      "videoTitle": "Assassins Creed Valhalla",
+      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+    },
+    {
+      "videoID": 23,
+      "categoryID": 5,
+      "videoTitle": "God of War 4",
+      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+    },
+    {
+      "videoID": 24,
+      "categoryID": 5,
+      "videoTitle": "Resident Evil 8",
+      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+    }
+  ]
+}

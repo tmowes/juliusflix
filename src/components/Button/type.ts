@@ -1,5 +1,5 @@
-import { RefAttributes } from 'react';
+import { RefAttributes } from 'react'
 
 export type ButtonProps = RefAttributes<HTMLAnchorElement> & {
-  to: string;
-};
+  to: string
+}

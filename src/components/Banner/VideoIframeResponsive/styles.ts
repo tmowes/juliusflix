@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const VideoContainer = styled.div`
   position: relative;
@@ -7,7 +7,7 @@ export const VideoContainer = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-`;
+`
 export const ResponsiveIframe = styled.iframe`
   position: absolute;
   top: 0;
@@ -16,4 +16,4 @@ export const ResponsiveIframe = styled.iframe`
   right: 0;
   width: 100%;
   height: 100%;
-`;
+`

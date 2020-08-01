@@ -1,93 +1,84 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useState, useCallback } from 'react';
-
-import PageDefault from '../../components/PageDefault';
-import { Container } from './styles';
-import { Link } from 'react-router-dom';
-import { CategoryProps } from './types';
-import FormField from '../../components/FormField';
+import React, { useState, useEffect, useCallback } from 'react'
+import { Link } from 'react-router-dom'
+import PageDefault from '../../components/PageDefault'
+import FormField from '../../components/FormField'
+import { useForm } from '../../hooks/useForm'
+import { getCategories } from '../../repositories/categories'
+import { Container, FormContainer } from './styles'
+import { CategoryProps } from './types'
 
 const AddCategory: React.FC = () => {
   const initialvalues = {
+    id: 1,
     categoryTitle: '',
     description: '',
     color: '#21222c',
-  };
-
-  const [categories, setCategories] = useState<CategoryProps[]>([]);
-  const [values, setValues] = useState(initialvalues);
-
-  const setValue = useCallback(
-    (key, value) => {
-      setValues({
-        ...values,
-        [key]: value,
-      });
-    },
-    [values],
-  );
-
-  const handleChange = useCallback(
-    event => {
-      setValue(event.target.getAttribute('name'), event.target.value);
-    },
-    [setValue],
-  );
+  }
+  const { values, handleChange, clearForm } = useForm(initialvalues)
+  const [categories, setCategories] = useState<CategoryProps[]>([])
 
   const handleSubmit = useCallback(
     event => {
-      event.preventDefault();
-      setCategories([...categories, values]);
+      event.preventDefault()
+      setCategories([...categories, values])
+      clearForm(initialvalues)
     },
-    [categories, values],
-  );
+    [categories, clearForm, initialvalues, values],
+  )
+
+  useEffect(() => {
+    async function loadDatabases(): Promise<void> {
+      const categoriesList = await getCategories()
+      setCategories(categoriesList)
+    }
+    loadDatabases()
+  }, [])
 
   return (
     <Container>
       <PageDefault>
-        <h1>Cadastro de categoria</h1>
-        <h2>{values.categoryTitle}</h2>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <FormField
-              label='Titulo'
-              name='categoryTitle'
-              type='text'
-              value={values.categoryTitle}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <FormField
-              label='Descrição'
-              name='description'
-              type='text'
-              value={values.description}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <FormField
-              label='Cor'
-              name='color'
-              type='color'
-              value={values.color}
-              onChange={handleChange}
-            />
-          </div>
-          <button>Cadastrar</button>
-        </form>
-        <ul>
-          {categories.map((category, index) => (
-            <li
-              key={`${category}${index}`}>{`${category.categoryTitle}${index}`}</li>
-          ))}
-        </ul>
-        <Link to='/'>Ir para home</Link>
+        <FormContainer>
+          <h1>Cadastro de categoria</h1>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <FormField
+                label="Titulo"
+                name="categoryTitle"
+                type="text"
+                value={values.categoryTitle}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <FormField
+                label="Descrição"
+                name="description"
+                type="search"
+                value={values.description}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <FormField
+                label="Cor"
+                name="color"
+                type="color"
+                value={values.color}
+                onChange={handleChange}
+              />
+            </div>
+            <button type="submit">Cadastrar</button>
+          </form>
+          <ul>
+            {categories.map(category => (
+              <li key={`${category.id}`}>{category.categoryTitle}</li>
+            ))}
+          </ul>
+          <Link to="/">Ir para home</Link>
+        </FormContainer>
       </PageDefault>
     </Container>
-  );
-};
+  )
+}
 
-export default AddCategory;
+export default AddCategory

@@ -1,11 +1,14 @@
-export interface InputProps {
-  hasValue?: boolean;
+import { InputHTMLAttributes } from 'react'
+
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  hasValue?: boolean
+  as: 'textarea' | 'input'
 }
 
 export interface FormFieldProps {
-  label: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  value: string;
-  name: string;
-  type: 'text' | 'color';
+  label: string
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
+  value: string
+  name: string
+  type: 'text' | 'color' | 'search'
 }

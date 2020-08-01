@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import { Input } from './styles';
-import { FormFieldProps } from './types';
+import { WrapperFormField, Label, Input } from './styles'
+import { FormFieldProps } from './types'
 
 const FormField: React.FC<FormFieldProps> = ({
   label,
@@ -10,12 +10,26 @@ const FormField: React.FC<FormFieldProps> = ({
   type,
   value,
 }) => {
+  const fieldId = `id_${name}`
+  const isTextArea = type === 'search'
+  const tag = isTextArea ? 'textarea' : 'input'
+  const hasValue = Boolean(value.length)
   return (
-    <label>
-      <span>{label}:</span>
-      <Input name={name} type={type} onChange={onChange} value={value} />
-    </label>
-  );
-};
+    <WrapperFormField>
+      <Label htmlFor={fieldId}>
+        <Input
+          as={tag}
+          id={fieldId}
+          name={name}
+          type={type}
+          onChange={onChange}
+          value={value}
+          hasValue={hasValue}
+        />
+        <span>{label}</span>
+      </Label>
+    </WrapperFormField>
+  )
+}
 
-export default FormField;
+export default FormField
