@@ -26,8 +26,7 @@ const Dashboard: React.FC = () => {
           {initialData.length === 0 ? (
             <div>LOADING...</div>
           ) : (
-            // eslint-disable-next-line consistent-return
-            initialData.map((category, index) => {
+            initialData.map((category: InitialDataProps, index: number) => {
               if (index === 0) {
                 return (
                   <div key={category.id}>

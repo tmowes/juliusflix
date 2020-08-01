@@ -8,7 +8,8 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 export interface FormFieldProps {
   label: string
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
-  value: string
+  value: string | undefined
   name: string
   type: 'text' | 'color' | 'search'
+  suggestions?: (string | undefined)[]
 }

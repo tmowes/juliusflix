@@ -9,11 +9,13 @@ const FormField: React.FC<FormFieldProps> = ({
   onChange,
   type,
   value,
+  suggestions,
 }) => {
   const fieldId = `id_${name}`
   const isTextArea = type === 'search'
   const tag = isTextArea ? 'textarea' : 'input'
-  const hasValue = Boolean(value.length)
+  const hasValue = Boolean(value?.length)
+  const hasSuggestions = Boolean(suggestions?.length)
   return (
     <WrapperFormField>
       <Label htmlFor={fieldId}>
@@ -25,8 +27,19 @@ const FormField: React.FC<FormFieldProps> = ({
           onChange={onChange}
           value={value}
           hasValue={hasValue}
+          autoComplete={hasSuggestions ? 'off' : 'on'}
+          list={hasSuggestions ? `suggestionFor_${fieldId}` : undefined}
         />
         <span>{label}</span>
+        {hasSuggestions && (
+          <datalist id={`suggestionFor_${fieldId}`}>
+            {suggestions?.map(suggestion => (
+              <option key={suggestion} value={suggestion}>
+                {suggestion}
+              </option>
+            ))}
+          </datalist>
+        )}
       </Label>
     </WrapperFormField>
   )

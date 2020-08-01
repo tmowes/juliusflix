@@ -41,4 +41,8 @@ button {
   cursor: pointer;
   text-decoration: none;
 }
+li {
+  list-style-type: none;
+  padding: 8px;
+}
 `

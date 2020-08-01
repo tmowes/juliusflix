@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import { Link } from 'react-router-dom'
 import PageDefault from '../../components/PageDefault'
 import FormField from '../../components/FormField'
 import { useForm } from '../../hooks/useForm'
 import { getCategories } from '../../repositories/categories'
 import { Container, FormContainer } from './styles'
-import { CategoryProps } from './types'
+import FormButtonsContainer from '../../components/FormButtonsContainer'
+import Button from '../../components/Button'
+import FormButton from '../../components/FormButton'
+import { FormDataProps } from '../../hooks/types'
 
 const AddCategory: React.FC = () => {
   const initialvalues = {
@@ -15,7 +17,7 @@ const AddCategory: React.FC = () => {
     color: '#21222c',
   }
   const { values, handleChange, clearForm } = useForm(initialvalues)
-  const [categories, setCategories] = useState<CategoryProps[]>([])
+  const [categories, setCategories] = useState<FormDataProps[]>([])
 
   const handleSubmit = useCallback(
     event => {
@@ -29,6 +31,7 @@ const AddCategory: React.FC = () => {
   useEffect(() => {
     async function loadDatabases(): Promise<void> {
       const categoriesList = await getCategories()
+      console.log('categoriesList', categoriesList)
       setCategories(categoriesList)
     }
     loadDatabases()
@@ -67,14 +70,17 @@ const AddCategory: React.FC = () => {
                 onChange={handleChange}
               />
             </div>
-            <button type="submit">Cadastrar</button>
+            <FormButtonsContainer>
+              <Button to="/">Volta para página inicial</Button>
+              <FormButton type="submit">Cadastrar</FormButton>
+            </FormButtonsContainer>
           </form>
           <ul>
+            <h3>Lista de categorias cadastradas:</h3>
             {categories.map(category => (
               <li key={`${category.id}`}>{category.categoryTitle}</li>
             ))}
           </ul>
-          <Link to="/">Ir para home</Link>
         </FormContainer>
       </PageDefault>
     </Container>

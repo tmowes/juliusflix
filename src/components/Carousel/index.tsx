@@ -30,9 +30,9 @@ const Carousel: React.FC<CarouselProps> = ({ ignoreFirstVideo, category }) => {
             return null
           }
           return (
-            <SliderItem key={video.title}>
+            <SliderItem key={video.videoTitle}>
               <VideoCard
-                videoTitle={video.title}
+                videoTitle={video.videoTitle}
                 videoURL={video.url}
                 categoryColor={categoryColor}
               />

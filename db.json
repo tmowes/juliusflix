@@ -186,6 +186,41 @@
       "categoryId": 5,
       "videoTitle": "Resident Evil 8",
       "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+    },
+    {
+      "videoTitle": "#Imersão React Aula 5 - Gerenciador de Video Completo",
+      "url": "https://www.youtube.com/watch?v=hhQ3RtvmfEg",
+      "category": "Front End",
+      "id": 25
+    },
+    {
+      "videoTitle": "#Imersão React Aula 5 - Gerenciador de Video Completo",
+      "url": "https://www.youtube.com/watch?v=hhQ3RtvmfEg",
+      "categoryId": 1,
+      "id": 26
+    },
+    {
+      "videoTitle": "Gestão & Pessoas em Tech - Treinamento e desenvolvimento em tecnologia",
+      "url": "https://www.youtube.com/watch?v=uMQ9Jk7hw2I",
+      "categoryId": 1,
+      "id": 27
+    },
+    {
+      "categoryId": 0,
+      "videoTitle": "Gestão & Pessoas em Tech - Treinamento e desenvolvimento em tecnologia",
+      "url": "https://www.youtube.com/watch?v=uMQ9Jk7hw2I",
+      "id": 28
+    },
+    {
+      "categoryId": 1,
+      "videoTitle": "Gestão & Pessoas em Tech - Treinamento e desenvolvimento em tecnologia",
+      "url": "https://www.youtube.com/watch?v=uMQ9Jk7hw2I",
+      "id": 29
+    },
+    {
+      "videoTitle": "Gestão & Pessoas em Tech - Treinamento e desenvolvimento em tecnologia",
+      "url": "https://www.youtube.com/watch?v=uMQ9Jk7hw2I",
+      "id": 30
     }
   ]
 }
